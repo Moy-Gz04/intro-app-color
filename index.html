@@ -8,12 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      body {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+      footer, nav.navbar {
+        background-color: #343a40;
+        padding: 15px 0;
+      }
+    </style>
   </head>
   <body>
-    <div class="container py-5">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Aplicación de Pruebas de Color</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
       <div class="row justify-content-center mb-5">
         <h1 class="text-center w-100">🎨 Herramienta de Selección de Color </h1>
       </div>
+
       <div class="row justify-content-center">
         <div class="col-md-10 col-lg-8">
           <div class="card shadow-lg">
@@ -21,7 +41,7 @@
               <div id="color-box" class="rounded mb-4 shadow"></div>
               <div class="row g-3">
                 <div class="col-md-4">
-                  <label for="color-picker" class="form-label">Elija el color: </i></label>
+                  <label for="color-picker" class="form-label">Elija el color:</label>
                   <input type="color" id="color-picker" class="form-control form-control-color">
                 </div>
                 <div class="col-md-8 d-flex align-items-center">
@@ -59,7 +79,15 @@
           </div>
         </div>
       </div>
+
+      <footer class="bg-dark text-white py-3 fixed-bottom">
+        <div class="container text-center">
+          <p class="mb-0">&copy; 2025. Todos los derechos reservados.</p>
+          <p class="mb-0">Desarrollado por: Juan Moisés Gómez Aispuro</p>
+        </div>
+      </footer>
     </div>
+
     <script src="./js/main.js"></script>
     <script>feather.replace();</script>
   </body>
