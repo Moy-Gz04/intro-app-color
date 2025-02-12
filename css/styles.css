@@ -6,14 +6,14 @@ body {
 
 h1 {
   color: #eceff4;
-  font-weight: 600;
+  font-weight: 550;
   text-align: center;
   margin-bottom: 20px;
 }
 
 #color-box {
   width: 100%;
-  height: 180px;
+  height: 130px;
   background-color: #091c47;
   border: 5px solid #fcfdfe;
   border-radius: 10px;
@@ -103,3 +103,8 @@ button#theme-toggle:hover {
   color: #eceff4;
   font-weight: bold;
 }
+
+body {
+  padding-top: 60px; /* Ajusta este valor según la altura del navbar */
+}
+
